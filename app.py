@@ -42,7 +42,7 @@ if uploaded_file:
         results = []
         for email in emails:
             name_or_company = smart_extract(email)
-            results.append({'Email': email, 'Name/Company': name_or_company})
+            results.append({'Email': email, 'Name': name_or_company})
 
         df = pd.DataFrame(results)
 
